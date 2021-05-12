@@ -9,4 +9,6 @@
 #   Must contain at least on symbol from    ~`!@#$%^&*()_+-=
 
 def check_pwd(string):
-    return False
+    if len(string) < 8:
+        return False
+    return True
