@@ -36,6 +36,10 @@ class TestCase(unittest.TestCase):
         input = 'A2cdefgh' # No special character
         self.assertEqual(check_pwd(input), False)
 
+    def test9(self):
+        input = 'A2cdefghijklmnop~' # No special character
+        self.assertEqual(check_pwd(input), True)
+
 
 if __name__ == '__main__':
     unittest.main()
