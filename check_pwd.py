@@ -7,5 +7,6 @@
 #   Must contain at least one uppercase letter
 #   Must contain at least one digit
 #   Must contain at least on symbol from    ~`!@#$%^&*()_+-=
+
 def check_pwd(string):
-    pass
+    return False
