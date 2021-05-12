@@ -44,6 +44,10 @@ class TestCase(unittest.TestCase):
         input = 'A2lmnp~' # Meets all criteria except length
         self.assertEqual(check_pwd(input), False)
 
+    def test11(self):
+        input = '123$56aA' # Meets all criteria
+        self.assertEqual(check_pwd(input), True)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -27,7 +27,7 @@ def check_pwd(string):
             flag3 = 1
 
     # Cited work 1
-    specials = ["~", "`", "!", "@", "#","%", "^", "&", "*", "(", ")", "_", "-", "+", "="]
+    specials = ["~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "-", "+", "="]
     matched_specials = [characters in specials for characters in string]
     for boolean in matched_specials:
         if boolean == True:
