@@ -12,16 +12,19 @@ def check_pwd(string):
     if len(string) < 8 or len(string) > 20:
         return False
 
-    flag1 = 0
-    flag2 = 0
+    flag1 = 0 # checks for uppercase
+    flag2 = 0 # checks for lowercase
+    flag3 = 0 # checks for digit
 
     for element in string:
         if element.isupper():
             flag1 = 1
         if element.islower():
             flag2 = 1
+        if element.isdigit():
+            flag3 = 1
 
-    if flag1 == 0 or flag2 == 0:
+    if flag1 == 0 or flag2 == 0 or flag3 == 0:
         return False
 
     return True
