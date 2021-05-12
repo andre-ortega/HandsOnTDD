@@ -9,12 +9,17 @@ class TestCase(unittest.TestCase):
         self.assertEqual(check_pwd(input), False)
 
     def test2(self):
-        input = 'abcdefgh' #length 8
+        input = 'aB3defgh-' #length 9, full password
         self.assertEqual(check_pwd(input), True)
 
     def test3(self):
         input = 'abcdefghijklmnopqrstuv' #length 22
         self.assertEqual(check_pwd(input), False)
+
+    def test4(self):
+        input = 'abcdefg' #length 8, 
+        self.assertEqual(check_pwd(input), False)
+
 
 if __name__ == '__main__':
     unittest.main()
