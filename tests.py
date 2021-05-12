@@ -20,6 +20,10 @@ class TestCase(unittest.TestCase):
         input = 'abcdefgh' #length 8, no uppercase letter
         self.assertEqual(check_pwd(input), False)
 
+    def test5(self):
+        input = 'ABCDEFGH' #length 8, no lowercase letter
+        self.assertEqual(check_pwd(input), False)
+
 
 if __name__ == '__main__':
     unittest.main()
