@@ -21,7 +21,11 @@ class TestCase(unittest.TestCase):
         self.assertEqual(check_pwd(input), False)
 
     def test5(self):
-        input = 'ABCDEFGH' #length 8, no lowercase letter
+        input = 'ABCDEFGH' # no lowercase letter
+        self.assertEqual(check_pwd(input), False)
+
+    def test6(self):
+        input = 'Abcdefgh' # no digit
         self.assertEqual(check_pwd(input), False)
 
 
