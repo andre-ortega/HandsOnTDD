@@ -28,6 +28,10 @@ class TestCase(unittest.TestCase):
         input = 'Abcdefgh' # no digit
         self.assertEqual(check_pwd(input), False)
 
+    def test7(self):
+        input = '1234567' # only digits!
+        self.assertEqual(check_pwd(input), False)
+
 
 if __name__ == '__main__':
     unittest.main()
