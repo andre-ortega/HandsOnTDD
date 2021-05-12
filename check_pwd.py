@@ -26,7 +26,7 @@ def check_pwd(string):
         if element.isdigit():
             flag3 = 1
 
-    # Cited work 1
+    # Cited idea from Kite.com
     specials = ["~", "`", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "-", "+", "="]
     matched_specials = [characters in specials for characters in string]
     for boolean in matched_specials:
