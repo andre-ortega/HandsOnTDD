@@ -29,7 +29,7 @@ class TestCase(unittest.TestCase):
         self.assertEqual(check_pwd(input), False)
 
     def test7(self):
-        input = '1234567' # only digits!
+        input = '1234567' # only digits
         self.assertEqual(check_pwd(input), False)
 
     def test8(self):
